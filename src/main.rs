@@ -1,7 +1,5 @@
 mod algorithms;
 
-use std::collections::HashMap;
-
 fn main() {
-    
+    algorithms::binary_search::run();
 }
