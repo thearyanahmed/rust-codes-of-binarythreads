@@ -27,7 +27,7 @@ pub fn optimisedFibonacci(n: u64, map: &mut HashMap<u64,u64>) -> u64 {
             // update the map
             map.insert(n,v);
 
-            // return the new fib. val
+            // return the new fibonacci val
             return v;
         }
     }

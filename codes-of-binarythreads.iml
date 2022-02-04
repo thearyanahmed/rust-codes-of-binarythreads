@@ -5,8 +5,10 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/fibonacci/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/algorithms/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
       <excludeFolder url="file://$MODULE_DIR$/src/fibonacci/target" />
+      <excludeFolder url="file://$MODULE_DIR$/src/algorithms/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
