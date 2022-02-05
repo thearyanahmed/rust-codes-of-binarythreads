@@ -18,6 +18,8 @@ pub fn run() {
     println!("array[0] = {} \narray[last] = {}\narray length = {}\ntarget {}\nfound at index {}\n",array[0], array[MAX - 1],length, target,index)
 }
 
+// causes stackoverflow
+// unsafe code, unsafe casting
 pub fn interpolationSearch(array: &mut [i32; MAX], low: i32, high: i32, target: i32) -> i32 {
     if low <= high && target >= array[low as usize] && target <= array[high as usize] {
         let position = low + (((high - low) / (array[high as usize] - array[low as usize])) * (target - array[low as usize]));
