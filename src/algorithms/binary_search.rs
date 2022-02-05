@@ -2,7 +2,7 @@
 use rand::{self,Rng};
 
 const MAX : usize = 1000000;
-const MAX_VALUE : u32 = 10000000;
+// const MAX_VALUE : u32 = 10000000;
 
 pub fn binary_search(array : &mut [i32], target: i32) -> i32 {
     let mut left = 0;
@@ -28,11 +28,7 @@ pub fn binary_search(array : &mut [i32], target: i32) -> i32 {
 pub fn run() {
     let mut ranger = rand::thread_rng();
 
-    let mut array: [i32; MAX] = [0; MAX];
-
-    for i in 0..MAX {
-        array[i] = ranger.gen_range(0..(MAX_VALUE as i32));
-    }
+    let mut array = crate::utils::array::randomInt32Array();
 
     array.sort();
 
