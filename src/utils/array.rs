@@ -13,3 +13,7 @@ pub fn randomInt32Array() -> [i32; MAX] {
 
     return array;
 }
+
+pub fn randomInt32ArrayMaxSize() -> usize {
+    return MAX;
+}
