@@ -1,5 +1,6 @@
 #![allow(non_snake_case)]
 use rand::{self,Rng};
+use crate::utils::array as arrayUtil;
 
 const MAX : usize = 1000000;
 // const MAX_VALUE : u32 = 10000000;
@@ -8,7 +9,7 @@ pub fn binary_search(array : &mut [i32], target: i32) -> i32 {
     let mut left = 0;
     let mut right = array.len() - 1;
 
-    while left < right {
+    while left <= right {
         let mid = left + (right - left) / 2;
 
         if array[mid] == target {
@@ -28,7 +29,7 @@ pub fn binary_search(array : &mut [i32], target: i32) -> i32 {
 pub fn run() {
     let mut ranger = rand::thread_rng();
 
-    let mut array = crate::utils::array::randomInt32Array();
+    let mut array = arrayUtil::randomInt32Array();
 
     array.sort();
 
