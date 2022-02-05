@@ -9,22 +9,22 @@ impl<T> Stack<T> {
     }
 
     pub fn length(&self) -> usize {
-        self.stack.len()
+        return self.stack.len();
     }
 
     pub fn pop(&mut self) -> Option<T> {
-        self.stack.pop()
+        return self.stack.pop();
     }
 
     pub fn push(&mut self, item: T) {
-        self.stack.push(item)
+        return self.stack.push(item);
     }
 
     pub fn isEmpty(&self) -> bool {
-        self.stack.is_empty()
+        return self.stack.is_empty();
     }
 
     pub fn peek(&self) -> Option<&T> {
-        self.stack.last()
+        return self.stack.last();
     }
 }
