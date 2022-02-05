@@ -9,7 +9,7 @@ pub fn binary_search(array : &mut [i32], target: i32) -> i32 {
     let mut right = array.len() - 1;
 
     while left < right {
-        let mid = (left + right) / 2;
+        let mid = left + (right - left) / 2;
 
         if array[mid] == target {
             return mid as i32;
